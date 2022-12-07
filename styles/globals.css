@@ -1,18 +1,48 @@
 html,
 body {
+  display:flex;
+  flex-direction: column;
   padding: 0;
-  margin: 0;
+  margin: 5vh auto;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+max-width: 600px;
+  }
 
 a {
   color: inherit;
   text-decoration: none;
 }
 
+
 * {
   box-sizing: border-box;
+}
+button{
+  padding:5px 10px;
+  border:2px solid;
+  border-radius:12px;
+}
+#new-quote{
+  margin-bottom:10px;
+
+  transition: 100ms;
+}
+button:hover{
+  transform:scale(1.2);
+  cursor:pointer;
+}
+#tweet-quote{
+  font-size: 1em;
+  margin-right:150px;
+  border:2px solid;
+  padding:5px 10px;
+  border-radius:12px;
+
+}
+#tweet-quote:hover{
+  color:rgb(0, 153, 255);
+  cursor:pointer;
 }
 
 @media (prefers-color-scheme: dark) {
